@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Inbox</title>
+    <link rel="stylesheet" href="../blind_CSS/inb_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="screen">
+        <div id="sidebar">
+            <div id="logo_div">
+                <h2 id="logo">LOGO</h2>
+            </div>
+            <a href="compose.html">
+            <div id="compose_btn">
+                <h2>Compose</h2>
+            </div>
+        </a>
+            <div id="navigation">
+                <a href="Inbox_2_type.html"><div class="nav_item" id = "Inbox"><i class="fa-solid fa-inbox"></i><p>Inbox</p></div></a>
+                <a href="drafts.html"><div class="nav_item"><i class="fa-solid fa-file-alt"></i><p>Drafts</p></div></a>
+                <a href="sent.html"><div class="nav_item"><i class="fa-solid fa-paper-plane"></i><p>Sent</p></div></a>
+                <div class="nav_item"><i class="fa-solid fa-star"></i><p>Starred</p></div>
+            </div>
+
+            <div id="other_options">
+                <div class="option_item"><i class="fa-solid fa-archive"></i><p>Archive</p></div>
+                <a href="spam.html"><div class="option_item"><i class="fa-solid fa-ban"></i><p>Spam</p></div></a>
+                <a href="delete.html"><div class="option_item"><i class="fa-solid fa-trash"></i><p>Trash</p></div></a>
+                <div class="option_item"><i class="fa-solid fa-envelope"></i><p>All Mails</p></div>
+            </div>
+
+            <div id="folder_box">
+                <div class="folder_label"><i class="fa-solid fa-folder"></i><p>Folder</p></div>
+                <div class="add_folder">+</div>
+            </div>
+
+            <div id="label_box">
+                <div class="folder_label"><i class="fa-solid fa-tags"></i><p>Label</p></div>
+                <div class="add_folder">+</div>
+            </div>
+        </div>
+
+        <div id="content_area">
+            <div id="navbar">
+                
+                    <div class="navbar_section" id="search_section">
+                        <input type="text" id="search_bar" placeholder="Search emails...">
+                        <button id="search_button"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div class="navbar_section" id="user_section">
+                        <a href="compose.html"><div id="compose_button"><i class="fa fa-edit"></i> Compose 
+                        </div></a>
+                        <div id="user_profile">
+                            <i class="fa fa-user-circle"></i>
+                            <p id="username">Ayush Kadam</p>
+                            <a href="index.html"><button id="logout_button"><i class="fa fa-sign-out-alt"></i></button></a>
+                        </div>
+                    </div>
+               
+                
+            </div>
+            <div id="email_content">
+                <div class="email_list">
+                    <div class="email_item">
+                        <h3 class="email_subject">Meeting Reminder</h3>
+                        <p class="email_sender">From: vu2f2324031@pvppvoe.ac.in</p>
+                        <p class="email_snippet">Don't forget about the meeting tomorrow at 10 AM.</p>
+                    </div>
+                    <div class="email_item">
+                        <h3 class="email_subject">Invoice #12345</h3>
+                        <p class="email_sender">From: leetcode.com</p>
+                        <p class="email_snippet">Please find attached your invoice for this month.</p>
+                    </div>
+                    <div class="email_item">
+                        <h3 class="email_subject">Newsletter: August Edition</h3>
+                        <p class="email_sender">From: ABPmaza.in</p>
+                        <p class="email_snippet">Check out the latest updates and offers.</p>
+                    </div>
+                    <div class="email_item">
+                        <h3 class="email_subject">Profile Updatation: Addhar card updates</h3>
+                        <p class="email_sender">From: IndianUIDA.com</p>
+                        <p class="email_snippet">Please update your profile pictures, mobile number, link you addhar with bank etc...</p>
+                    </div>
+                   
+                    
+                    <!-- Add more email items here -->
+                </div>
+                <div class="email_preview">
+                    <h3 class="email_subject">Meeting Reminder</h3>
+                    <p class="email_sender">From: john.doe@example.com</p>
+                    <p class="email_body">Hi there, just a quick reminder about the meeting tomorrow at 10 AM. Looking forward to seeing you there!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

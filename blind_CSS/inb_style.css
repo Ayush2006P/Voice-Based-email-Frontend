@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+a {
+    color: rgb(255, 255, 255); /* Replace with your desired color */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+a:hover {
+    color: rgb(255, 255, 255); /* Optional: Change color on hover */
+}
+
+body {
+    background-color: #f4f4f9;
+    height: 100vh;
+}
+
+#screen {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 20%;
+    background-color: #34495e;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid #bdc3c7;
+}
+
+#logo_div {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#compose_btn {
+    background-color: #3498db;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#compose_btn:hover {
+    background-color: #2980b9;
+}
+
+#navigation, #other_options {
+    flex-grow: 1;
+}
+
+
+.nav_item, .option_item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#Inbox{
+    background-color: #00021154;
+}
+
+.nav_item i, .option_item i {
+    margin-right: 15px;
+}
+
+.nav_item:hover, .option_item:hover {
+    background-color: #2c3e50;
+}
+
+#folder_box, #label_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.folder_label i {
+    margin-right: 10px;
+}
+
+.add_folder {
+    background-color: #3c64e7;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add_folder:hover {
+    background-color: #2247ce;
+}
+
+#content_area {
+    width: 80%;
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border-bottom: 2px solid #bdc3c7;
+}
+
+.navbar_section {
+    width: 48%;
+}
+
+#email_content {
+    height: 90%;
+    display: flex;
+}
+
+.email_list {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-right: 2px solid #bdc3c7;
+}
+
+.email_preview {
+    width: 30%;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+.email_list, .email_preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.email_item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email_subject {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.email_sender, .email_snippet, .email_body {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.email_body {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+#navbar {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border-bottom: 2px solid #bdc3c7;
+}
+
+.navbar_section {
+    display: flex;
+    align-items: center;
+}
+
+#search_section {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+#search_bar {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#search_button {
+    padding: 8px 12px;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#user_section {
+    display: flex;
+    align-items: center;
+}
+
+#compose_button {
+    background-color: #000000;
+    padding: 8px 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#user_profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#user_profile i {
+    font-size: 28px;
+}
+
+#username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#logout_button {
+    background-color: #ff2b2b;
+    padding: 8px 12px;
+    border: black solid 1px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}

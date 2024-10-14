@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+
+#main-div
+  {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Blind_Images/background.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+#box-div
+  {
+    height: 70%;
+    width: 60%;
+    background-color: white;  
+    display: flex;
+    border-radius: 10px;
+  }
+
+/* Centering and styling the compose email box */
+.compose-email-container {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 450px;
+  box-shadow: 0 4px 15px rgb(0, 0, 0);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Styling the form heading */
+.compose-email-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input, .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
